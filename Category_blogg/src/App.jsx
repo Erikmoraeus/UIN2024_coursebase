@@ -18,8 +18,8 @@ function App() {
         <Route index element={<Home/>}/>
         <Route path="categories/*" element={<Categories />}>
           <Route index element={<CategoriesIndex />}/>
-          <Route path=':slug' element={<Category />}/>
-          <Route path=':slug/:postid' element={<PostPage />} />
+          <Route path=':slug' element={<Category post={posts} />}/>
+          <Route path=':slug/:postid' element={<PostPage post={posts}/>} />
         </Route>
       </Routes>
     </Layout>
