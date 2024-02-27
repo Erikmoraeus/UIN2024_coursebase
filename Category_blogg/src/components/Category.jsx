@@ -4,7 +4,6 @@ import PostCard from "./PostCard"
 
 export default function Category({posts}){
     const {slug} = useParams()
-    return <h1>{slug}</h1>
     const [post, setPost] = useState()
 
     useEffect(()=>{
@@ -17,6 +16,6 @@ export default function Category({posts}){
         <h1>{slug}</h1>
         {post?.map(item => <PostCard key={item.id} title={item.title} category={item.category} id={item.id} ingress={item.ingress}/>)}
     </section>
-
+    
     )
 }
