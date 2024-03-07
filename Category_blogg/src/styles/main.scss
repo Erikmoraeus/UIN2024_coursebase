@@ -14,5 +14,18 @@ body{
     p {
         color: black;
     }
+    label{
+        color: black;
+        font-size: 1.1rem;
+    }
+    section{
+      ul li{
+        list-style-type: none;
+       }
+       ul li a{
+        text-decoration: wavy;
+       }
+       
+    }
 
 }
